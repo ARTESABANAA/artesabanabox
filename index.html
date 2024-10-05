@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="moving-banner">
+        <p>Aviso importante: ¡Descubre nuestras nuevas colecciones de artesanías Zenú!</p>
+    </div>
+    <header class="fixed-header">
+        <div class="logo">
+            <h1>Tienda Online</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre Nosotros</a></li>
+                <li><a href="pueblozenu.html">Pueblo Zenu</a></li>
+                <li><a href="cuidado.html">Cuidado de Productos</a></li>
+                <li><a href="importancia.html">Importancia</a></li>
+                <li><a href="pagos.html">Pagos</a></li>
+
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="intro">
+            <div class="texto">
+                <center><h2>Bienvenido a ARTESABANA</h2></center>
+                <p>Bienvenido a ARTESABANA, donde cada pieza de artesanía en caña flecha cuenta una historia ancestral de tradición y destreza. Nuestro objetivo es preservar y celebrar la rica herencia cultural del pueblo Zenú, ofreciendo productos únicos que reflejan el arte y la pasión de nuestros hábiles artesanos. Explora nuestra colección de sombreros, bolsos, monederos y más, y únete a nosotros en la celebración de la riqueza de la artesanía tradicional.</p>
+            </div>
+            <div class="imagen">
+                <center><img src="images/logo.png" alt="Imagen de bienvenida"></center>
+            </div>
+        </section>
+
+        <br><br><br><br>
+        <center><h1>Productos En Caña Flecha</h1></center>
+        <br><br><br>
+
+        <section class="categories">
+            <h2>Secciones</h2>
+            <div class="category" data-section="electronics">
+                <img src="images/sombrero.png" alt="Electrónica">
+                <h3>Sombreros Zenu</h3>
+            </div>
+            <div class="category" data-section="fashion">
+                <img src="images/monederos y aretes.png" alt="Moda">
+                <h3>Monederos y Aretes Zenu</h3>
+            </div>
+            <div class="category" data-section="home">
+                <img src="images/bolso.jpg" alt="Hogar">
+                <h3>Bolsos Zenu</h3>
+            </div>
+        </section>
+
+        <!-- Aquí se mostrarán los productos según la categoría -->
+        <section class="products">
+            <!-- Los productos seleccionados se renderizan aquí -->
+        </section>
+
+        <section class="cart">
+            <h2>Carrito</h2>
+            <ul id="cart-items">
+                <!-- Aquí se listarán los productos agregados al carrito -->
+            </ul>
+            <p id="cart-total">Total: $0</p>
+            <button class="checkout">Vayamos a WhatsApp a Realizar el Pago</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+
+    <button id="scroll-top">↑</button>
+
+    <a href="https://wa.me/3012092463" class="whatsapp-icon" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
